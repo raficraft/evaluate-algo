@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script type="text/javascript" src="js/engine/brain/data/dataJSON.js" defer></script>
+    <script type="text/javascript" src="js/engine/brain/data/stopWord.js" defer></script>
+    <script type="text/javascript" src="js/engine/function/Alterate.js" defer></script>
+
+    <script type="text/javascript" src="js/engine/brain/algo/getData.js" defer></script>
+    <script type="text/javascript" src="js/engine/function/function.js" defer></script>
+
+    <script type="text/javascript" src="js/engine/init.js" defer></script>
+    <script type="text/javascript" src="js/engine/ExecuteAlgo.js" defer></script>
+    <script type="text/javascript" src="js/engine/dom.js" defer></script>
+
+
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Analyse</title>
+</head>
+<body class="body">
+
+    <header>
+        <div class="rootInner">
+            <h1>Test des différents Algorithme.</h1>
+            <input type="search" id="globalSearch" name="search"
+                placeholder="Rechercher un ingredient, appareil, ustensiles ou une recette"
+                > 
+            <input type="number" id="iteration" name="iteration" 
+                placeholder="Nombre d'Iteration , default Value 1 seul tour"
+                > 
+        </div> 
+
+        <div class="radioContainer">
+
+            <div class="listRadio">
+                <div class="inputRadio">
+                    <input type="radio" id="cookies" name="storage" value="cookies" >
+                    <label for="cookies">Cookies</label>
+                </div>
+
+                <div class="inputRadio">
+                    <input type="radio" id="localestorage" name="storage" value="locale">
+                    <label for="localestorage">Local Storage</label>
+                </div>
+
+                <div class="inputRadio">
+                    <input type="radio" id="sessionstorage" name="storage" value="sessions" checked>
+                    <label for="sessionstorage">Session Storage</label>
+                </div>
+
+                <div class="inputRadio">
+                    <input type="radio" id="sessionstorage" name="none" value="none">
+                    <label for="sessionstorage">None</label>
+                </div>
+
+            </div>
+
+        </div>
+
+    </header>
+
+    <main>
+        <section class="rootInner">
+
+            <table>
+                <thead>
+                    <tr>
+                        <th scope="col">Method/loop</th>
+                        <th scope="col">Magic string</th>
+                        <th scope="col">For/match</th>
+                        <th scope="col">Foreach/includes</th>
+                        <th scope="col">For in/includes</th>
+                        <th scope="col">For of/includes</th>
+                        <th scope="col">Filter</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="line method1">
+                        <th scope="row algo1">Json pure</th>
+                        <td class="algo1"></td>
+                        <td class="algo2"></td>
+                        <td class="algo3"></td>
+                        <td class="algo4"></td>
+                        <td class="algo5"></td>
+                        <td class="algo6"></td>
+                    </tr>
+
+
+
+                    <tr class="line method2">
+                        <th scope="row">Normalize Json</th>
+                        <td class="algo1"></td>
+                        <td class="algo2"></td>
+                        <td class="algo3"></td>
+                        <td class="algo4"></td>
+                        <td class="algo5"></td>
+                        <td class="algo6"></td>
+                    </tr>
+                    <tr class="line lineResult resultMethod2">
+                        <th scope="row">Resultat</th>
+                        <td class="result1"></td>
+                        <td class="result2"></td>
+                        <td class="result3"></td>
+                        <td class="result4"></td>
+                        <td class="result5"></td>
+                        <td class="result6"></td>
+                    </tr>
+
+                    <tr class="line method3">
+                        <th scope="row">Dictionnary</th>
+                        <td class="algo1"></td>
+                        <td class="algo2"></td>
+                        <td class="algo3"></td>
+                        <td class="algo4"></td>
+                        <td class="algo5"></td>
+                        <td class="algo6"></td>
+                    </tr>
+                    <tr class="line lineResult resultMethod3">
+                        <th scope="row">Resultat</th>
+                        <td class="result1"></td>
+                        <td class="result2"></td>
+                        <td class="result3"></td>
+                        <td class="result4"></td>
+                        <td class="result5"></td>
+                        <td class="result6"></td>
+                    </tr>
+
+                    <tr class="line method4">
+                        <th scope="row">Data Save</th>
+                        <td class="algo1" colspan="6"></td>
+                    </tr>
+                    <tr class="line lineResult resultMethod4">
+                        <th class="line lineResult" scope="row">resultat</th>
+                        <td class="result1" colspan="6"></td>
+                    </tr>
+                    
+
+                </tbody>
+            </table>
+            </section>
+            
+    </main>
+
+</body>
+</html>

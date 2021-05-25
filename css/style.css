@@ -1,0 +1,126 @@
+body{
+    font-size: 16px;  
+    padding : 1.5rem;  
+}
+
+*{
+    box-sizing: border-box;
+}
+
+
+h1{
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+}
+
+h2{
+    font-size : 1.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.rootInner{
+    width : 1024px;
+    margin: 0 auto;
+}
+
+input[type="search"],input[type="number"]{
+    height : 3rem;
+    text-indent: 5px;
+    font-size: 1rem;
+    width : 100%;
+    border-radius: 5px;
+    border : 1px solid #CECECE;
+    margin-bottom : 1.5rem
+}
+
+.checkBoxGroup{
+    display: flex;
+    margin-bottom: 2rem;
+}
+
+label{
+    display: flex;
+    align-items: center;
+    margin-bottom : 0.5rem;
+    margin-right : 1rem;
+    
+}
+
+input[type="checkbox"]{
+    height: 1.25rem;
+    width : 1.25rem;
+    margin-right : 0.5rem;
+}
+
+h2{
+    font-size: 1.5rem;
+    font-weight : bold;
+    margin-bottom: 1rem;    
+}
+
+.result,.explanations{
+
+    padding: 1rem;
+
+}
+
+p{
+    margin-bottom : 0.5rem;
+}
+
+ul{
+    padding : 1rem;
+}
+
+table{
+    margin: 1.5rem auto 3rem;
+}
+
+
+th,td{
+    padding: 0.5rem;
+    border : 1px solid rgb(126, 126, 126);
+    text-align: center;   
+}
+
+thead th{
+    background-color: #3f87a6;
+    color : white;
+    font-weight: bold;
+    padding : 0.75rem 1rem;
+}
+
+
+
+tbody tr{
+    background-color: #e4f0f5;
+}
+tbody th{
+    font-weight: bold;
+    padding : 0.75rem 1rem;
+}
+
+.lineResult{
+    background-color: #3d3d3d;
+    color : white;
+}
+
+.radioContainer{
+    display : flex;
+    flex-direction: column;
+    margin : 0 auto;
+}
+.listRadio{
+    display: flex;
+    margin : 0 auto;
+}
+
+.inputRadio{
+    display : flex;
+}
+
+.inputRadio label{
+    margin-left : 0.5rem;
+}
