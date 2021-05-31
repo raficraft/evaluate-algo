@@ -9,7 +9,8 @@ class GetResult{
 
         this.radioStorage.forEach(radio => {
             radio.addEventListener('click', (e)=>{
-                this.storage = e.target.value                
+                this.storage = e.target.value   
+                console.log(this.storage);             
             })            
         });
         

@@ -34,6 +34,8 @@ class Exec{
         const [result , uniqueID] = thisAlgo()
         this.showResult(result,'table .resultMethod2 .result1', 'Methode 1 Algo V1') 
         //uniqueID is a set
+
+        console.log(this.params.storage);
         this.params.storageArray = JSON.stringify([...uniqueID])
 
 
@@ -254,6 +256,7 @@ class Exec{
                     return true
                 }else{
                     document.cookie = `${keyWords}=${storage}`
+                    storageMessage.innerHTML = `Insertion de la recherche ${keyWords} dans le gestionnaire de storage : ${this.params.storage}`   
                     return false
                 }
           
@@ -270,7 +273,7 @@ class Exec{
                 }else{
 
                     sessionStorage.setItem(this.keyWords, storage);
-                    storageMessage.innerHTML = 'Insertion de la recherche dans le gestionnaire de storage'                   
+                    storageMessage.innerHTML = `Insertion de la recherche ${keyWords} dans le gestionnaire de storage : ${this.params.storage}`                   
                     storageResult.innerHTML = 'none'
                     return false
                 }
@@ -283,7 +286,7 @@ class Exec{
                     return true
                 }else{
                     localStorage.setItem(this.keyWords, storage);
-                    storageMessage.innerHTML = 'Insertion de la recherche dans le gestionnaire de storage'                   
+                    storageMessage.innerHTML = `Insertion de la recherche ${keyWords} dans le gestionnaire de storage : ${this.params.storage}`                   
                     storageResult.innerHTML = 'none'
                   
                     return false
